@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Buku</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Buku</h1>
+        <form id="editBookForm">
+            <input type="hidden" id="bookId">
+            <input type="text" id="editName" placeholder="Nama Buku" required>
+            <input type="number" id="editYear" placeholder="Tahun Terbit" required>
+            <input type="text" id="editAuthor" placeholder="Penulis" required>
+            <input type="text" id="editPublisher" placeholder="Penerbit" required>
+            <textarea id="editSummary" placeholder="Ringkasan"></textarea>
+            <input type="number" id="editPageCount" placeholder="Total Halaman" required>
+            <input type="number" id="editReadPage" placeholder="Halaman Dibaca" required>
+            <label>
+                <input type="checkbox" id="editReading"> Sedang Dibaca
+            </label>
+            <div class="button-group">
+                <button type="submit">Simpan Perubahan</button>
+                <a href="index.html" class="cancel-button">Batal</a>
+            </div>            
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

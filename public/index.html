@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShelf Ahmad Zuhdi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BookShelf Ahmad Zuhdi</h1>
+
+        <!-- Form Tambah Buku -->
+        <form id="bookForm">
+            <input type="text" id="name" placeholder="Nama Buku" required>
+            <input type="number" id="year" placeholder="Tahun Terbit" required>
+            <input type="text" id="author" placeholder="Penulis" required>
+            <input type="text" id="publisher" placeholder="Penerbit" required>
+            <textarea id="summary" placeholder="Ringkasan"></textarea>
+            <input type="number" id="pageCount" placeholder="Total Halaman" required>
+            <input type="number" id="readPage" placeholder="Halaman Dibaca" required>
+            <label>
+                <input type="checkbox" id="reading"> Sedang Dibaca
+            </label>
+            <button type="submit">Tambah Buku</button>
+        </form>
+
+        <!-- Daftar Buku dalam Tabel -->
+        <h1>Daftar Buku</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Buku</th>
+                    <th>Nama Buku</th>
+                    <th>Penerbit</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="bookList"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
